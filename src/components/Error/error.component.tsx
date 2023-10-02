@@ -1,9 +1,9 @@
-import React from 'react';
-import {StyleSheet, Text, View} from 'react-native';
-import Icon from 'react-native-vector-icons/FontAwesome';
-import {Colors} from '../../constants/colors.constants';
-import {Typography} from '../../constants/typography.constants';
-import {CommonStyles} from '../../utils/commonStyles.utils';
+import React from "react";
+import { StyleSheet, Text, View } from "react-native";
+import Icon from "react-native-vector-icons/FontAwesome";
+import { Colors } from "../../constants/colors.constants";
+import { Typography } from "../../constants/typography.constants";
+import { CommonStyles } from "../../utils/commonStyles.utils";
 
 export const Error: React.FC = () => {
   return (
@@ -18,9 +18,8 @@ export const Error: React.FC = () => {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
+    justifyContent: "center",
+    alignItems: "center",
   },
 });
 

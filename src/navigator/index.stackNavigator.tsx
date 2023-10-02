@@ -1,26 +1,22 @@
 import {
   NativeStackNavigationOptions,
   createNativeStackNavigator,
-} from '@react-navigation/native-stack';
-import React from 'react';
-const StocksHoldingsScreen = () => null;
+} from "@react-navigation/native-stack";
+import React from "react";
+
+import { HomeScreen } from "../screens/index.screens";
 
 const Stack = createNativeStackNavigator();
 
-export const StackNavigator = props => {
+export const StackNavigator = (props) => {
   // screenOptions is the options that will be applied to the screens
   const screenOptions: NativeStackNavigationOptions = {
     headerShown: false,
-    animation: 'default',
+    animation: "default",
   };
   return (
-    <Stack.Navigator
-      screenOptions={screenOptions}
-      initialRouteName={'StocksHoldingsScreen'}>
-      <Stack.Screen
-        name={'StocksHoldingsScreen'}
-        component={StocksHoldingsScreen}
-      />
+    <Stack.Navigator screenOptions={screenOptions} initialRouteName={"Home"}>
+      <Stack.Screen name={"Home"} component={HomeScreen} />
     </Stack.Navigator>
   );
 };

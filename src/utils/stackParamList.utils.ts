@@ -1,3 +1,6 @@
 export type StackParamList = {
-  StocksHoldingsScreen: undefined;
+  Home: undefined;
+  SearchResult: {
+    searchedText: string;
+  };
 };

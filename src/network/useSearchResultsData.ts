@@ -22,7 +22,7 @@ export const useSearchedResultsData = ({ searchedText = "" }) => {
       });
     }
     const data = callApi({
-      endpoint: ENV_VARIABLE.POPULAR_MOVIES + searchedText,
+      endpoint: ENV_VARIABLE.MOVIE_SEARCH_QUERY + searchedText,
       options: {},
     });
     data
